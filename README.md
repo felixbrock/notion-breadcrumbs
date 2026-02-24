@@ -6,7 +6,7 @@ Works in Chrome, Brave, Edge, Safari, and any Chromium-based browser.
 
 ## Demo
 
-[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/72f065c862374d3ba101119751f3f266-with-play.gif)](https://www.loom.com/share/72f065c862374d3ba101119751f3f266)
+[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/72f065c862374d3ba101119751f3f266-6e21b12b9c9b4ff2.jpg)](https://www.loom.com/share/72f065c862374d3ba101119751f3f266)
 
 ## Features
 
@@ -122,16 +122,16 @@ Press **Ctrl+B** on any Notion page to open the navigator.
 
 ### Keyboard shortcuts
 
-| Key | Action |
-|---|---|
-| `Ctrl+B` | Open / close the navigator |
-| `↑` `↓` | Move selection up / down |
-| `Enter` | Open the selected item |
-| `←` | Navigate to selected parent page |
-| `→` | Navigate into selected subpage |
-| `Page Up` `Page Down` | Jump between sections |
-| `Tab` / `Shift+Tab` | Move selection down / up (alternative) |
-| `Esc` | Close the navigator |
+| Key                   | Action                                 |
+| --------------------- | -------------------------------------- |
+| `Ctrl+B`              | Open / close the navigator             |
+| `↑` `↓`               | Move selection up / down               |
+| `Enter`               | Open the selected item                 |
+| `←`                   | Navigate to selected parent page       |
+| `→`                   | Navigate into selected subpage         |
+| `Page Up` `Page Down` | Jump between sections                  |
+| `Tab` / `Shift+Tab`   | Move selection down / up (alternative) |
+| `Esc`                 | Close the navigator                    |
 
 Start typing to filter the list. The search bar is focused automatically when the navigator opens.
 
@@ -149,11 +149,11 @@ When you navigate to a parent or subpage, the navigator reopens automatically on
 
 The extension is three files:
 
-| File | Purpose |
-|---|---|
-| `manifest.json` | Tells the browser to inject the script on `notion.so` |
-| `content.js` | Reads the page DOM for breadcrumbs, headings, and subpages; handles keyboard input and renders the overlay |
-| `styles.css` | Styles the overlay to match Notion's look and feel |
+| File            | Purpose                                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------------------------------- |
+| `manifest.json` | Tells the browser to inject the script on `notion.so`                                                      |
+| `content.js`    | Reads the page DOM for breadcrumbs, headings, and subpages; handles keyboard input and renders the overlay |
+| `styles.css`    | Styles the overlay to match Notion's look and feel                                                         |
 
 No data leaves your browser. The extension only reads the DOM of the Notion page you're on and has no network permissions.
 
