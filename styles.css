@@ -1,0 +1,226 @@
+#nbn-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 12vh;
+}
+
+.nbn-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.6);
+}
+
+.nbn-modal {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px,
+              rgba(15, 15, 15, 0.1) 0px 3px 6px,
+              rgba(15, 15, 15, 0.2) 0px 9px 24px;
+  min-width: 420px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding-bottom: 6px;
+}
+
+.nbn-search-wrap {
+  padding: 10px 12px 6px;
+  flex-shrink: 0;
+}
+
+.nbn-search {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 14px;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 6px;
+  outline: none;
+  background: transparent;
+  color: rgb(55, 53, 47);
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.nbn-search:focus {
+  border-color: rgba(35, 131, 226, 0.57);
+  box-shadow: 0 0 0 1px rgba(35, 131, 226, 0.35);
+}
+
+.nbn-search::placeholder {
+  color: rgba(55, 53, 47, 0.4);
+}
+
+.nbn-list {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.nbn-empty {
+  padding: 16px;
+  text-align: center;
+  color: rgba(55, 53, 47, 0.5);
+  font-size: 14px;
+}
+
+.nbn-section-label {
+  padding: 10px 16px 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(55, 53, 47, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  user-select: none;
+}
+
+.nbn-section-label:not(:first-child) {
+  margin-top: 4px;
+  border-top: 1px solid rgba(55, 53, 47, 0.09);
+  padding-top: 10px;
+}
+
+.nbn-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  cursor: pointer;
+  color: rgb(55, 53, 47);
+  border-radius: 4px;
+  margin: 0 4px;
+  gap: 8px;
+}
+
+.nbn-item.nbn-selected {
+  background: rgba(55, 53, 47, 0.08);
+}
+
+.nbn-item-icon {
+  font-size: 13px;
+  color: rgba(55, 53, 47, 0.4);
+  min-width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.nbn-item-title {
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nbn-hints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  padding: 8px 14px;
+  border-top: 1px solid rgba(55, 53, 47, 0.09);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.nbn-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: rgba(55, 53, 47, 0.45);
+  white-space: nowrap;
+}
+
+.nbn-hint kbd {
+  display: inline-block;
+  padding: 1px 4px;
+  font-size: 10px;
+  font-family: inherit;
+  line-height: 1.4;
+  color: rgba(55, 53, 47, 0.55);
+  background: rgba(55, 53, 47, 0.06);
+  border: 1px solid rgba(55, 53, 47, 0.1);
+  border-radius: 3px;
+}
+
+/* ── Dark mode ─────────────────────────────────────────────────── */
+
+.dark #nbn-overlay .nbn-modal,
+.notion-dark #nbn-overlay .nbn-modal {
+  background: rgb(37, 37, 37);
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+              rgba(15, 15, 15, 0.2) 0px 3px 6px,
+              rgba(15, 15, 15, 0.4) 0px 9px 24px;
+}
+
+.dark #nbn-overlay .nbn-section-label,
+.notion-dark #nbn-overlay .nbn-section-label {
+  color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.dark #nbn-overlay .nbn-item,
+.notion-dark #nbn-overlay .nbn-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark #nbn-overlay .nbn-item.nbn-selected,
+.notion-dark #nbn-overlay .nbn-item.nbn-selected {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark #nbn-overlay .nbn-item-icon,
+.notion-dark #nbn-overlay .nbn-item-icon {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.dark #nbn-overlay .nbn-search,
+.notion-dark #nbn-overlay .nbn-search {
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.13);
+}
+
+.dark #nbn-overlay .nbn-search:focus,
+.notion-dark #nbn-overlay .nbn-search:focus {
+  border-color: rgba(35, 131, 226, 0.57);
+  box-shadow: 0 0 0 1px rgba(35, 131, 226, 0.35);
+}
+
+.dark #nbn-overlay .nbn-search::placeholder,
+.notion-dark #nbn-overlay .nbn-search::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.dark #nbn-overlay .nbn-empty,
+.notion-dark #nbn-overlay .nbn-empty {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.dark #nbn-overlay .nbn-hints,
+.notion-dark #nbn-overlay .nbn-hints {
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.dark #nbn-overlay .nbn-hint,
+.notion-dark #nbn-overlay .nbn-hint {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.dark #nbn-overlay .nbn-hint kbd,
+.notion-dark #nbn-overlay .nbn-hint kbd {
+  color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}

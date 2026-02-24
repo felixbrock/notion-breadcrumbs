@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Notion Breadcrumb Navigator",
+  "version": "1.0",
+  "description": "Navigate Notion page hierarchy via Ctrl+B",
+  "content_scripts": [
+    {
+      "matches": ["*://www.notion.so/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
