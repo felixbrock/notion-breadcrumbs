@@ -6,7 +6,14 @@ Works in Chrome, Brave, Edge, Safari, and any Chromium-based browser.
 
 ## Demo
 
-[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/72f065c862374d3ba101119751f3f266-6e21b12b9c9b4ff2.jpg)](https://www.loom.com/share/72f065c862374d3ba101119751f3f266)
+```
+╔══════════════════════════════════╗
+║                                  ║
+║          ▶  View Demo            ║
+║                                  ║
+╚══════════════════════════════════╝
+```
+[Watch on Loom](https://www.loom.com/share/72f065c862374d3ba101119751f3f266)
 
 ## Features
 
