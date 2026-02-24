@@ -4,9 +4,9 @@ A lightweight browser extension that adds keyboard-driven navigation to Notion. 
 
 Works in Chrome, Brave, Edge, Safari, and any Chromium-based browser.
 
-![Notion Breadcrumb Navigator](images/image.png)
-
 ## Demo
+
+<img src="images/image.png" alt="Notion Breadcrumb Navigator" width="50%">
 
 [▶  View Demo on Loom](https://www.loom.com/share/72f065c862374d3ba101119751f3f266)
 
